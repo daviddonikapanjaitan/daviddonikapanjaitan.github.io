@@ -1,3 +1,3 @@
-Tempat belajar dan sharing mengenai saham dan investasi.
+Tempat belajar dan sharing mengenai saham, ekonomi dan keuangan.
 
-Terkadang membahas masalah teknologi.
+Dan juga membahas masalah Teknologi.
