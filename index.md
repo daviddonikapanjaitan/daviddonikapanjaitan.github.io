@@ -1,5 +1,3 @@
-Here you can say lots of fun things about your site.
+Tempat belajar dan sharing mengenai saham dan investasi.
 
-Maybe say a some things about yourself.
-
-Or maybe what you plan to blog about.
+Terkadang membahas masalah teknologi.
