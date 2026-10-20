@@ -1,0 +1,107 @@
+@import "tailwindcss";
+
+/* Dark mode follows the `dark` class set by next-themes. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Design tokens (PLANNING.md, Section 7). */
+:root {
+  --background: #ffffff;
+  --surface: #f8fafc;
+  --foreground: #0f172a;
+  --muted: #475569;
+  --primary: #1e3a8a;
+  --primary-foreground: #ffffff;
+  /* Decorative accent (dots, lines). */
+  --accent: #0d9488;
+  /* Accent used for text, darker so it passes WCAG AA on light surfaces. */
+  --accent-strong: #0f766e;
+  --accent-soft: #f0fdfa;
+  --border: #e2e8f0;
+  color-scheme: light;
+}
+
+.dark {
+  --background: #0b1120;
+  --surface: #111827;
+  --foreground: #e2e8f0;
+  --muted: #94a3b8;
+  --primary: #60a5fa;
+  --primary-foreground: #0b1120;
+  --accent: #2dd4bf;
+  --accent-strong: #2dd4bf;
+  --accent-soft: #0f2a2e;
+  --border: #1f2937;
+  color-scheme: dark;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-accent: var(--accent);
+  --color-accent-strong: var(--accent-strong);
+  --color-accent-soft: var(--accent-soft);
+  --color-border: var(--border);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+html {
+  /* Keep anchored sections clear of the sticky navbar. */
+  scroll-padding-top: 5rem;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+::selection {
+  background: var(--primary);
+  color: var(--primary-foreground);
+}
+
+:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Fade-up on section enter. Only when JS runs, so content never stays hidden. */
+  .js [data-reveal] {
+    opacity: 0;
+    transform: translateY(16px);
+    transition:
+      opacity 400ms ease-out,
+      transform 400ms ease-out;
+  }
+
+  .js [data-reveal][data-revealed] {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* "Show more" toggle inside <details>. */
+details > summary {
+  list-style: none;
+}
+
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+@media print {
+  header,
+  .no-print {
+    display: none !important;
+  }
+}
