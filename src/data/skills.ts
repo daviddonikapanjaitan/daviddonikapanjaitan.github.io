@@ -50,6 +50,21 @@ export const skillGroups: SkillGroup[] = [
     ],
   },
   {
+    title: "AI & Agentic Development",
+    icon: "bot",
+    skills: [
+      { name: "Spring AI", core: true },
+      { name: "LLM integration (Spring Boot)" },
+      { name: "Claude Code" },
+      { name: "OpenCode" },
+      { name: "Hermes Agent" },
+      { name: "Tool calling" },
+      { name: "ReAct" },
+      { name: "Planning & reflection patterns" },
+      { name: "Multi-agent workflows" },
+    ],
+  },
+  {
     title: "Frontend",
     icon: "monitor",
     skills: [

@@ -43,6 +43,8 @@ export const metadata: Metadata = {
     "Node.js",
     "Kafka",
     "React",
+    "Spring AI",
+    "Agentic AI",
     "Jakarta",
     "Indonesia",
   ],

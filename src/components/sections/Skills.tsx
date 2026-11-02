@@ -1,5 +1,6 @@
 import {
   Activity,
+  Bot,
   Boxes,
   Cloud,
   Coffee,
@@ -22,6 +23,7 @@ const icons: Record<SkillGroupIcon, LucideIcon> = {
   server: Server,
   network: Network,
   radio: Radio,
+  bot: Bot,
   monitor: Monitor,
   database: Database,
   boxes: Boxes,

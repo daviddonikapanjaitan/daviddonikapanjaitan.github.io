@@ -35,6 +35,7 @@ export type SkillGroupIcon =
   | "server"
   | "network"
   | "radio"
+  | "bot"
   | "monitor"
   | "database"
   | "boxes"
