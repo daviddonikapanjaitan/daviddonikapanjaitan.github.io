@@ -15,6 +15,8 @@ export const profile: Profile = {
   whatsappUrl: undefined,
   resumePath: "/resume.pdf",
   resumeFileName: "David-Donika-Panjaitan-CV.pdf",
+  creativeResumePath: "/resume-creative.pdf",
+  creativeResumeFileName: "David-Donika-Panjaitan-CV-Creative.pdf",
   photo: {
     src: "/images/profile.webp",
     alt: "Portrait of David Donika Panjaitan",

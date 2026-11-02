@@ -16,6 +16,9 @@ export interface Profile {
   whatsappUrl?: string;
   resumePath: string;
   resumeFileName: string;
+  /** Designed (two-column) version of the CV. */
+  creativeResumePath: string;
+  creativeResumeFileName: string;
   photo: { src: string; alt: string; width: number; height: number };
   careerStart: YearMonth;
   openToWork: boolean;

@@ -44,5 +44,6 @@ next-env.d.ts
 /assets/
 *.pdf
 !public/resume.pdf
+!public/resume-creative.pdf
 *.psd
 Thumbs.db

@@ -89,6 +89,14 @@ export function Hero() {
               <Download aria-hidden="true" className="size-5" />
               Download CV
             </a>
+            <a
+              href={asset(profile.creativeResumePath)}
+              download={profile.creativeResumeFileName}
+              className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full border border-border bg-background px-6 py-3 font-semibold transition-colors hover:bg-surface"
+            >
+              <Download aria-hidden="true" className="size-5" />
+              Download Creative CV
+            </a>
             <div className="flex items-center gap-1">
               <a
                 href={profile.linkedinUrl}

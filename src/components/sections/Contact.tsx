@@ -61,6 +61,14 @@ export function Contact() {
             <Download aria-hidden="true" className="size-5" />
             Download CV
           </a>
+          <a
+            href={asset(profile.creativeResumePath)}
+            download={profile.creativeResumeFileName}
+            className={linkClass}
+          >
+            <Download aria-hidden="true" className="size-5" />
+            Download Creative CV
+          </a>
         </div>
       </div>
     </Section>
