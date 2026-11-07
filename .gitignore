@@ -47,3 +47,6 @@ next-env.d.ts
 !public/resume-creative.pdf
 *.psd
 Thumbs.db
+
+# Upwork job applications (private)
+upwork_file/
